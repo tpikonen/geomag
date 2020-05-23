@@ -132,7 +132,7 @@ def scalar_potential(coeff, phi, theta, max_n, max_m, radial_alt, ref_radius=637
     ref_radius defaults to the radius of the earth in m.
     """
     cos_theta = math.cos(theta)
-    if cos_theta is 0:
+    if cos_theta == 0:
         cos_theta += 0.00000001
     sin_theta = math.sin(theta)
     sin_n, cos_n = multiple_angle(phi, max_n)
