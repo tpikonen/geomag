@@ -136,8 +136,6 @@ class WorldMagneticModel(object):
         degree(n)    order(m)    g |mnt0|    h |mnt0|    g |mnt0|    h |mnt0|
         =========    ========    ========    ========    ========    ========
 
-        .. |mnt0| replace:: \ :sup:`m`:sub:`n`\ (t\ :sub:`0`\ )
-
         """
         self.data = MagneticModelData(world_magnetic_model_filename)
         self.k = recursion_constants(self.data.array_size)
